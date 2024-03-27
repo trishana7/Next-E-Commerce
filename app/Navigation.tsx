@@ -2,13 +2,9 @@
 import ProductCard from "./ProductCard";
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 
+import "swiper/css";
 import "./globals.css";
-import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export interface Product {
   id: number;
@@ -55,7 +51,6 @@ const Navigation: React.FC = (): JSX.Element => {
         )}
         <div className=" max-w-lg">
           <Swiper
-            effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
@@ -68,7 +63,6 @@ const Navigation: React.FC = (): JSX.Element => {
             }}
             pagination={true}
             loop={true}
-            className="mySwiper"
             onTransitionEnd={(swiper) => handleSlideChange(swiper)}
           >
             {Array.isArray(products) &&
