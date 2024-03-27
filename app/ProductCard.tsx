@@ -8,15 +8,25 @@ const ProductCard: React.FC<{ product: Product; isMiddleSlide: boolean }> = ({
   isMiddleSlide,
 }) => (
   <div className="relative" key={product.id}>
-    <Image width={400} height={700} src={product.image} alt={product.name} />
+    <div className="flex items-center justify-center">
+      <Image
+        className={`duration-500 ease-in-out ${
+          isMiddleSlide ? "h-56" : "h-48"
+        }`}
+        width={isMiddleSlide ? 240 : 200}
+        height={300}
+        src={product.image}
+        alt={product.name}
+      />
+    </div>
     <div
       className={`${
         isMiddleSlide
-          ? "absolute bg-white/20 -ml-10 p-4 rounded-full backdrop-blur-3xl duration-300 translate-y-10 justify-between w-80"
+          ? "absolute bg-white/20 -ml-9 p-4 rounded-full backdrop-blur-3xl duration-300 translate-y-10 justify-between w-80"
           : "justify-center"
       }  text-white flex items-center`}
     >
-      <div>
+      <div className="pl-4">
         <p
           className={`${
             !isMiddleSlide ? "text-center text-sm" : "text-base"
