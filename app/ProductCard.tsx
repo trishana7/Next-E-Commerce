@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCartProp> = ({
     <div className="flex items-center justify-center">
       <Image
         className={`duration-500 ease-in-out ${
-          isMiddleSlide ? "h-56 w-56" : "h-48 w-48"
+          isMiddleSlide ? "h-56 w-56" : "h-32 w-32 mt-20"
         }`}
         width={240}
         height={300}

@@ -101,7 +101,7 @@ const Navigation: React.FC = (): JSX.Element => {
             </div>
           </div>
         )}
-        <div className="max-w-lg">
+        <div className="max-w-80 lg:max-w-2xl">
           <Swiper
             grabCursor={true}
             centeredSlides={true}
