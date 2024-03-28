@@ -1,19 +1,23 @@
 import { Product } from "./Navigation";
 import Image from "next/image";
-const handleAddToCart = (product: Product) => {
-  console.log("hello", product);
-};
-const ProductCard: React.FC<{ product: Product; isMiddleSlide: boolean }> = ({
+interface ProductCartProp {
+  product: Product;
+  isMiddleSlide: boolean;
+  handleAddToCart: (product: Product) => void;
+}
+
+const ProductCard: React.FC<ProductCartProp> = ({
   product,
   isMiddleSlide,
+  handleAddToCart,
 }) => (
   <div className="relative" key={product.id}>
     <div className="flex items-center justify-center">
       <Image
         className={`duration-500 ease-in-out ${
-          isMiddleSlide ? "h-56" : "h-48"
+          isMiddleSlide ? "h-56 w-56" : "h-48 w-48"
         }`}
-        width={isMiddleSlide ? 240 : 200}
+        width={240}
         height={300}
         src={product.image}
         alt={product.name}
