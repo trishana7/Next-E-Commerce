@@ -51,3 +51,10 @@ You can access the live version of the deployed system through this link:
 [Deployed System Link](https://next-e-commerce-sigma.vercel.app/)
 
 This link will take you to the actual system where you can interact with its features and functionalities.
+
+<img width="1410" alt="Screenshot 2024-03-28 at 10 36 47 AM" src="https://github.com/trishana7/Next-E-Commerce/assets/56482464/28410ca4-f159-4c15-b3d3-7690f07460c6">
+
+<img width="1374" alt="Screenshot 2024-03-28 at 10 37 03 AM" src="https://github.com/trishana7/Next-E-Commerce/assets/56482464/b3c3e139-acca-4fd4-a49d-0583348d89b6">
+
+
+
